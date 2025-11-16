@@ -3,14 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RN to BSN Resources</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1 { color: #333; }
-    </style>
+    <meta name="description" content="Comprehensive directory of accredited RN to BSN programs across the United States. Find online, campus-based, and hybrid programs with detailed costs, requirements, and application information.">
+    <meta name="keywords" content="RN to BSN, nursing programs, BSN degree, registered nurse, bachelor of science in nursing, online nursing, nursing education">
+    <title>RN to BSN Programs Directory | Find Your Path to a BSN Degree</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>RN to BSN Program Resources</h1>
-    <p>This repository contains information about RN to BSN programs and admission requirements.</p>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>RN to BSN Programs Directory</h1>
+                    <p>Your Complete Guide to Bachelor of Science in Nursing Programs</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="states/index.html">Browse by State</a></li>
+                <li><a href="online/index.html">Online Programs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Find Your Path to a BSN Degree</h2>
+                <p>Explore hundreds of accredited RN to BSN programs across all 50 states. Compare costs, requirements, and delivery formats to find the perfect program for your career goals.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="search-section">
+                <h3>Search RN to BSN Programs</h3>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search by school name, city, or state...">
+                    <select id="stateFilter">
+                        <option value="all">All States</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="DC">District of Columbia</option>
+                    </select>
+                    <select id="deliveryFilter">
+                        <option value="all">All Formats</option>
+                        <option value="Online">Online</option>
+                        <option value="Campus">Campus</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                    <button id="searchButton">Search</button>
+                </div>
+                <div class="filter-chips">
+                    <span class="chip" data-filter="ccne">CCNE Accredited</span>
+                    <span class="chip" data-filter="acen">ACEN Accredited</span>
+                    <span class="chip" data-filter="affordable">Under $400/credit</span>
+                    <span class="chip" data-filter="fast">Accelerated Programs</span>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="number">500+</div>
+                    <div class="label">Accredited Programs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">50+</div>
+                    <div class="label">States Covered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">300+</div>
+                    <div class="label">Online Programs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">100%</div>
+                    <div class="label">Verified Information</div>
+                </div>
+            </section>
+
+            <section id="browse-states">
+                <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Browse Programs by State</h2>
+                <div class="state-grid">
+                    <div class="card">
+                        <h3><a href="states/alabama.html">Alabama</a></h3>
+                        <p>15+ accredited RN to BSN programs</p>
+                        <a href="states/alabama.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/alaska.html">Alaska</a></h3>
+                        <p>3+ accredited RN to BSN programs</p>
+                        <a href="states/alaska.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/arizona.html">Arizona</a></h3>
+                        <p>18+ accredited RN to BSN programs</p>
+                        <a href="states/arizona.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/california.html">California</a></h3>
+                        <p>65+ accredited RN to BSN programs</p>
+                        <span class="badge online">Many Online Options</span>
+                        <a href="states/california.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/florida.html">Florida</a></h3>
+                        <p>45+ accredited RN to BSN programs</p>
+                        <span class="badge online">Many Online Options</span>
+                        <a href="states/florida.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/texas.html">Texas</a></h3>
+                        <p>55+ accredited RN to BSN programs</p>
+                        <span class="badge online">Many Online Options</span>
+                        <a href="states/texas.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/new-york.html">New York</a></h3>
+                        <p>50+ accredited RN to BSN programs</p>
+                        <span class="badge online">Many Online Options</span>
+                        <a href="states/new-york.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/pennsylvania.html">Pennsylvania</a></h3>
+                        <p>40+ accredited RN to BSN programs</p>
+                        <a href="states/pennsylvania.html" class="btn btn-primary">View Programs</a>
+                    </div>
+                    <div class="card">
+                        <h3><a href="states/index.html">View All States</a></h3>
+                        <p>Browse programs in all 50 states + DC</p>
+                        <a href="states/index.html" class="btn btn-accent">See All States</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" style="margin-top: 3rem;">
+                <div class="program-section">
+                    <h2>About RN to BSN Programs</h2>
+                    <p>RN to BSN programs are designed for registered nurses who hold an Associate Degree in Nursing (ADN) or diploma in nursing and want to earn their Bachelor of Science in Nursing (BSN) degree. These programs build upon your existing nursing knowledge and clinical experience while providing advanced education in:</p>
+                    <ul class="features-list">
+                        <li>Leadership and Management</li>
+                        <li>Community and Public Health</li>
+                        <li>Evidence-Based Practice and Research</li>
+                        <li>Healthcare Policy and Ethics</li>
+                        <li>Advanced Pathophysiology and Pharmacology</li>
+                        <li>Nursing Informatics</li>
+                    </ul>
+
+                    <h3 style="margin-top: 2rem;">Why Earn Your BSN?</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>Career Advancement</label>
+                            <div class="value">Access to management and leadership positions</div>
+                        </div>
+                        <div class="info-item">
+                            <label>Higher Salary</label>
+                            <div class="value">BSN nurses earn 10-20% more on average</div>
+                        </div>
+                        <div class="info-item">
+                            <label>Graduate Education</label>
+                            <div class="value">Required for MSN, DNP, and PhD programs</div>
+                        </div>
+                        <div class="info-item">
+                            <label>Job Opportunities</label>
+                            <div class="value">Many hospitals prefer or require BSN</div>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Program Formats</h3>
+                    <p><strong>Online Programs:</strong> Complete your degree entirely online with flexible scheduling. Perfect for working nurses.</p>
+                    <p><strong>Campus Programs:</strong> Traditional on-campus format with in-person classes and clinical experiences.</p>
+                    <p><strong>Hybrid Programs:</strong> Combination of online coursework and on-campus requirements.</p>
+
+                    <h3 style="margin-top: 2rem;">Typical Requirements</h3>
+                    <ul class="requirements-list">
+                        <li>Current, unencumbered RN license</li>
+                        <li>Associate degree in nursing (ADN) or nursing diploma</li>
+                        <li>Minimum GPA (typically 2.5-3.0)</li>
+                        <li>Prerequisite courses (may vary by program)</li>
+                        <li>Professional references</li>
+                        <li>Personal statement or essay</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="faq" style="margin-top: 3rem;">
+                <div class="program-section">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <h3>How long does an RN to BSN program take?</h3>
+                    <p>Most RN to BSN programs can be completed in 12-24 months of full-time study. Part-time options are available at many schools and may take 2-3 years. Accelerated programs can be completed in as little as 12 months.</p>
+
+                    <h3>How much does an RN to BSN program cost?</h3>
+                    <p>Tuition varies widely by institution. Public universities typically charge $250-$500 per credit hour, while private institutions may charge $400-$800+ per credit hour. Most programs require 30-60 credits beyond your ADN.</p>
+
+                    <h3>Can I work while completing my RN to BSN?</h3>
+                    <p>Yes! Most RN to BSN programs are designed for working nurses. Online and hybrid formats offer flexible scheduling, and many students continue working full-time while completing their degree.</p>
+
+                    <h3>What is the difference between CCNE and ACEN accreditation?</h3>
+                    <p>Both CCNE (Commission on Collegiate Nursing Education) and ACEN (Accreditation Commission for Education in Nursing) are recognized accrediting bodies for nursing programs. Both types of accreditation are widely accepted by employers and graduate programs.</p>
+
+                    <h3>Will my ADN credits transfer?</h3>
+                    <p>Most RN to BSN programs accept your ADN nursing credits, though you may need to complete general education requirements if they weren't part of your ADN program. Each school evaluates transfer credits individually.</p>
+
+                    <h3>Are online RN to BSN programs legitimate?</h3>
+                    <p>Yes! Many reputable, accredited universities offer online RN to BSN programs. Always verify that a program is accredited by CCNE or ACEN before enrolling.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="states/index.html">Browse by State</a></li>
+                        <li><a href="online/index.html">Online Programs</a></li>
+                        <li><a href="#about">About RN to BSN</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular States</h4>
+                    <ul>
+                        <li><a href="states/california.html">California</a></li>
+                        <li><a href="states/texas.html">Texas</a></li>
+                        <li><a href="states/florida.html">Florida</a></li>
+                        <li><a href="states/new-york.html">New York</a></li>
+                        <li><a href="states/pennsylvania.html">Pennsylvania</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="https://www.aacnnursing.org/CCNE" target="_blank" rel="noopener">CCNE Accreditation</a></li>
+                        <li><a href="https://www.acenursing.org/" target="_blank" rel="noopener">ACEN Accreditation</a></li>
+                        <li><a href="https://www.nursingworld.org/" target="_blank" rel="noopener">American Nurses Association</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About This Site</h4>
+                    <p>This directory provides comprehensive information about accredited RN to BSN programs across the United States. All program information is regularly verified and updated.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RN to BSN Programs Directory. All information is provided for educational purposes. Please verify current program details with individual institutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
