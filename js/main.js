@@ -115,19 +115,59 @@ function initializeSearch() {
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
 
+    // Make search input navigate on Enter key
     if (searchInput) {
-        searchInput.addEventListener('input', debounce(function(e) {
-            performSearch(e.target.value);
-        }, 300));
-    }
-
-    if (searchButton) {
-        searchButton.addEventListener('click', function() {
-            if (searchInput) {
-                performSearch(searchInput.value);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearchNavigation();
             }
         });
     }
+
+    // Make search button navigate to states directory
+    if (searchButton) {
+        searchButton.addEventListener('click', function() {
+            handleSearchNavigation();
+        });
+    }
+}
+
+// Handle search navigation for static site
+function handleSearchNavigation() {
+    const searchInput = document.getElementById('searchInput');
+    const stateFilter = document.getElementById('stateFilter');
+    const deliveryFilter = document.getElementById('deliveryFilter');
+
+    // Get base path for GitHub Pages
+    const basePath = getBasePath();
+
+    // Check if a specific state is selected
+    if (stateFilter && stateFilter.value !== 'all') {
+        const stateName = stateFilter.options[stateFilter.selectedIndex].text;
+        const stateSlug = stateName.toLowerCase().replace(/\s+/g, '-');
+        window.location.href = basePath + 'states/' + stateSlug + '.html';
+        return;
+    }
+
+    // Check if delivery filter is set to online
+    if (deliveryFilter && deliveryFilter.value === 'Online') {
+        window.location.href = basePath + 'online/index.html';
+        return;
+    }
+
+    // Default: go to states directory
+    window.location.href = basePath + 'states/index.html';
+}
+
+// Get base path for navigation (handles GitHub Pages subdirectory)
+function getBasePath() {
+    const path = window.location.pathname;
+    // If we're in a subdirectory (GitHub Pages), extract the base
+    if (path.includes('/rntobsn/')) {
+        return '/rntobsn/';
+    }
+    // For local development or root domain
+    return '/';
 }
 
 // Filter Initialization
@@ -135,25 +175,38 @@ function initializeFilters() {
     const stateFilter = document.getElementById('stateFilter');
     const deliveryFilter = document.getElementById('deliveryFilter');
     const accreditationFilter = document.getElementById('accreditationFilter');
+    const basePath = getBasePath();
 
+    // State filter navigates to state page
     if (stateFilter) {
         stateFilter.addEventListener('change', function(e) {
-            programSearch.setFilter('state', e.target.value);
-            displayResults(programSearch.filteredPrograms);
+            if (e.target.value !== 'all') {
+                const stateName = e.target.options[e.target.selectedIndex].text;
+                const stateSlug = stateName.toLowerCase().replace(/\s+/g, '-');
+                window.location.href = basePath + 'states/' + stateSlug + '.html';
+            }
         });
     }
 
+    // Delivery filter for online navigates to online directory
     if (deliveryFilter) {
         deliveryFilter.addEventListener('change', function(e) {
-            programSearch.setFilter('delivery', e.target.value);
-            displayResults(programSearch.filteredPrograms);
+            if (e.target.value === 'Online') {
+                window.location.href = basePath + 'online/index.html';
+            } else if (e.target.value === 'all') {
+                window.location.href = basePath + 'states/index.html';
+            }
         });
     }
 
+    // For pages with results container (school listing pages), use the display function
     if (accreditationFilter) {
         accreditationFilter.addEventListener('change', function(e) {
-            programSearch.setFilter('accreditation', e.target.value);
-            displayResults(programSearch.filteredPrograms);
+            const resultsContainer = document.getElementById('resultsContainer');
+            if (resultsContainer) {
+                programSearch.setFilter('accreditation', e.target.value);
+                displayResults(programSearch.filteredPrograms);
+            }
         });
     }
 
