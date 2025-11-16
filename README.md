@@ -137,6 +137,40 @@ Program information is regularly updated and verified. Users should always confi
 
 Last Updated: November 2024
 
+## SEO and Google Indexing
+
+The site is fully optimized for search engines:
+
+### SEO Features
+- ✓ **sitemap.xml** - Complete sitemap with all 54 pages
+- ✓ **robots.txt** - Configured to allow all search engine crawling
+- ✓ **Meta tags** - Optimized titles, descriptions, and keywords on all pages
+- ✓ **Canonical URLs** - Prevent duplicate content issues
+- ✓ **Structured Data** - JSON-LD schema for enhanced search results
+- ✓ **Open Graph tags** - Optimized for social media sharing
+- ✓ **Mobile-responsive** - Mobile-first design for better rankings
+- ✓ **Fast loading** - Static HTML for optimal performance
+
+### How to Get Indexed by Google
+
+1. **Enable GitHub Pages** (if not already done):
+   - Go to repository Settings → Pages
+   - Select your branch as source
+   - Your site will be live at: `https://marcstein.github.io/rntobsn/`
+
+2. **Submit to Google Search Console**:
+   - Visit: https://search.google.com/search-console
+   - Add property: `https://marcstein.github.io/rntobsn/`
+   - Verify ownership (HTML file or meta tag method)
+   - Submit sitemap: `sitemap.xml`
+
+3. **Monitor Indexing**:
+   - Check "Coverage" report in Search Console
+   - Use "URL Inspection" tool to request indexing
+   - Typically indexed within 1-7 days
+
+See **SEO-GUIDE.md** for detailed instructions and best practices.
+
 ## License
 
 Educational purposes only. All program information should be verified with individual institutions.
