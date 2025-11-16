@@ -33,3 +33,4 @@ node_modules/
 add_comprehensive_tables.py
 generate_comprehensive_programs.py
 generate_states.py
+update_state_resources.py
