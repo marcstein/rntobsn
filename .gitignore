@@ -28,3 +28,9 @@ __pycache__/
 
 # Node modules (if using any build tools in future)
 node_modules/
+
+# Build/generation scripts
+add_comprehensive_tables.py
+generate_comprehensive_programs.py
+generate_states.py
+update_state_resources.py

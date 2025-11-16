@@ -364,6 +364,20 @@ main {
     background-color: var(--bg-light);
 }
 
+.comparison-table .section-header {
+    background-color: var(--bg-light);
+    font-weight: bold;
+}
+
+.comparison-table .section-header:hover {
+    background-color: #e8f4f8;
+}
+
+.comparison-table .section-header td {
+    padding: 0.75rem 1rem;
+    border-top: 2px solid var(--border-color);
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
