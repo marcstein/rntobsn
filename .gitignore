@@ -39,3 +39,5 @@ fix_table_links.py
 fix_online_page.py
 fix_online_page_v2.py
 remove_placeholder_tables.py
+audit_featured_programs.py
+fix_featured_program_links.py
